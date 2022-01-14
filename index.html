@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<script>
+    let arr1=[1,2,5,6,10,64,-1];
+    let arr2=[];
+    let arr3=[6,1,8,10,2,3,-1,0];
+    let arr4 = [-1,-2,5,-10,6,7];
+    function findMin (arr){
+        if (arr.length===0){
+            return -1;
+        }
+        let min1=arr[0];
+        let min2;
+        for (let i = 0; i < arr.length; i++) {
+            if (min1>arr[i]){
+                min2=i;
+            }
+        }
+        return min2 ;
+    }
+    let min=findMin(arr4);
+    alert("Số nhỏ nhất trong mảng là số thứ " + " "+ min)
+</script>
+</body>
+</html>
